@@ -1,6 +1,5 @@
 package com.weibo.dip.analysis.view.dynamic;
 
-import com.weibo.dip.analysis.view.DefaultView;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -9,6 +8,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import com.weibo.dip.analysis.view.DefaultView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

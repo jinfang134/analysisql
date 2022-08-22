@@ -110,6 +110,30 @@
         <artifactId>clickhouse-jdbc</artifactId>
         <version>${clickhouse.version}</version>
       </dependency>
+
+      <dependency>
+        <groupId>com.weibo.dip</groupId>
+        <artifactId>analysisql-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.weibo.dip</groupId>
+        <artifactId>analysisql-clickhouse</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.weibo.dip</groupId>
+        <artifactId>analysisql-mysql</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.weibo.dip</groupId>
+        <artifactId>analysisql-presto</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 

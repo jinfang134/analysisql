@@ -80,4 +80,5 @@ public class AnalysisQl implements Closeable {
   public void close() throws IOException {
     connector.close();
   }
+
 }
