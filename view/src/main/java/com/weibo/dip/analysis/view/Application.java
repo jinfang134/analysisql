@@ -20,7 +20,7 @@ public class Application {
 
 
     public static void main(String[] args) {
-        String topic="test";
+        String topic="CDN服务质量分析";
         String url="jdbcurl";
         String username="root";
         String password="password";
