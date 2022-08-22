@@ -6,7 +6,10 @@ package com.weibo.dip.analysis.view;
 
 import com.weibo.dip.analysis.view.dynamic.ViewLoader;
 import com.weibo.dip.analysisql.AnalysisQl;
+import com.weibo.dip.analysisql.connector.Metadata;
 import com.weibo.dip.analysisql.response.Response;
+
+import java.util.List;
 
 /**
  * @author zuojinfang
@@ -14,8 +17,18 @@ import com.weibo.dip.analysisql.response.Response;
  */
 public class Application {
 
+
+
     public static void main(String[] args) {
+        String topic="test";
+        String url="jdbcurl";
+        String username="root";
+        String password="password";
+        String table="test";
+
         DefaultConnector connector=new DefaultConnector();
+        Metadata metadata=new DefaultView(topic,url,username,password,table);
+        connector.register( metadata);
 //        connector.enableDynamic();
         AnalysisQl analysisQl = new AnalysisQl(connector);
         String dsl=" {\n" +
